@@ -1,0 +1,696 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+<!-- header section starts -->
+
+<header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo"> <span>T </span>ravel</a>
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#book">book</a>
+        <a href="#packages">packages</a>
+        <a href="#services">services</a>
+        <a href="#gallery">gallery</a>
+
+        <a href="#contact">contact</a>
+    </nav>
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+    
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here..">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+<!-- login form container -->
+<div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>dont't have an account? <a href="#">register now</a></p>
+    </form>
+</div>
+
+<!-- home section starts -->
+<section class="home" id="home">
+    <div class="content">
+        <h3>Find your wild</h3>
+        <p>Morocco Nature and Wildlife</p>
+        <a href="#" class="btn">discover more</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="pictures/vd1.mp4"></span>
+        <span class="vid-btn" data-src="pictures/vd2.mp4"></span>
+        <span class="vid-btn" data-src="pictures/vd3.mp4"></span>
+        <span class="vid-btn" data-src="pictures/vd4.mp4"></span>
+        <span class="vid-btn" data-src="pictures/vd5.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="pictures/vd1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+</section>
+
+
+
+<!-- home section ends -->
+
+<!-- book secion starts -->
+<section class="book" id="book">
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+
+    <div class="row">
+        <div class="image">
+            <img src="pictures/mountain.png" alt="">
+    </div>
+    
+    <form action="">
+        <div class="inputBox">
+            <h3>Where to</h3>
+            <input type="text" placeholder="place name">
+        </div>
+        <div class="inputBox">
+            <h3>how many</h3>
+            <input type="number" placeholder="number of guests">
+        </div>
+        <div class="inputBox">
+            <h3>arrivals</h3>
+            <input type="date">
+        </div>
+        <div class="inputBox">
+            <h3>leaving</h3>
+            <input type="date">
+        </div>
+        <input type="submit" class="btn" value="book now">
+
+    </form>
+    </div>
+</section>
+
+<!-- book section ends -->
+
+<!-- packages section starts -->
+
+<section class="packages" id="packages">
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+<div class="box-container">
+    <div class="box">
+        <img src="pictures/mount.jpg" alt="">
+        <div class="content">
+            <h3> <i class="fas fa-map-marker-alt"></i>Day trip from Agadir to Atlas Mountains and berber villages</h3>
+            <p>Agadir, Morocco</p>
+        </div>
+<div class="price">from $40</div>
+<a href="#" class="btn">book now</a>
+    </div>
+
+
+<div class="box">
+    <img src="pictures/tobkal.jpg" alt="">
+    <div class="content">
+        <h3> <i class="fas fa-map-marker-alt"></i>Mount Toubkal 2 Days Guided Trek From Agadir</h3>
+        <p>Agadir, Morocco</p>
+    </div>
+<div class="price">from $50</div>
+<a href="#" class="btn">book now</a>
+</div>
+
+
+    <div class="box">
+        <img src="pictures/bnhdou.jpg" alt="">
+        <div class="content">
+            <h3> <i class="fas fa-map-marker-alt"></i>Private Tour from Agadir to Ait Benhaddou and Ouarzazate</h3>
+            <p>Agadir, Morocco</p>
+        </div>
+<div class="price">from $60</div>
+<a href="#" class="btn">book now</a>
+    </div>
+
+    <div class="box">
+        <img src="pictures/mgn.jpg" alt="">
+        <div class="content">
+            <h3> <i class="fas fa-map-marker-alt"></i>M'Goun climbing 6 days trek as The Best Hiking in Morocco</h3>
+            <p>Agadir, Morocco</p>
+        </div>
+<div class="price">from $60</div>
+<a href="#" class="btn">book now</a>
+    </div>
+
+    <div class="box">
+        <img src="pictures/aga.jpg" alt="">
+        <div class="content">
+            <h3> <i class="fas fa-map-marker-alt"></i>Agadir Day tour</h3>
+            <p>Agadir, Morocco</p>
+        </div>
+<div class="price">from $20</div>
+<a href="#" class="btn">book now</a>
+    </div>
+
+    <div class="box">
+        <img src="pictures/desert.jpg" alt="">
+        <div class="content">
+            <h3> <i class="fas fa-map-marker-alt"></i>From Zagora: 6 Days Private Camel Trekking to M'hamid Desert</h3>
+            <p>Agadir, Morocco</p>
+        </div>
+<div class="price">from  $1,473</div>
+<a href="#" class="btn">book now</a>
+    </div>
+
+    <div class="box">
+        <img src="pictures/essw.jpg" alt="">
+        <div class="content">
+            <h3> <i class="fas fa-map-marker-alt"></i>Day trip to Essaouira Mogador and Atlantic Ocean from Agadir</h3>
+            <p>Agadir, Morocco</p>
+        </div>
+<div class="price">from  $30</div>
+<a href="#" class="btn">book now</a>
+    </div>
+
+    
+        <div class="box">
+            <img src="pictures/agafay.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Agafay Desert and Atlas Mountains Day Trip From Agadir & Camle Ride</h3>
+                <p>Agadir, Morocco</p>
+            </div>
+    <div class="price">from  $500</div>
+    <a href="#" class="btn">book now</a>
+        </div>
+
+        <div class="box">
+            <img src="pictures/brb.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Full-Day Berber Villages Private Cultural Tour from Agadir</h3>
+                <p>Agadir, Morocco</p>
+            </div>
+    <div class="price">from  $30</div>
+    <a href="#" class="btn">book now</a>
+        </div>
+
+
+        <div class="box">
+            <img src="pictures/ouzod.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Ouzoud Waterfalls Day Trip From Agadir</h3>
+                <p>Agadir, Morocco</p>
+            </div>
+    <div class="price">from  $50</div>
+    <a href="#" class="btn">book now</a>
+        </div>
+
+        <div class="box">
+            <img src="pictures/wintm.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>A day trip to one of the wonderful Cave in Agadir</h3>
+                <p>Agadir, Morocco</p>
+            </div>
+    <div class="price">from  $50</div>
+    <a href="#" class="btn">book now</a>
+        </div>
+
+        <div class="box">
+            <img src="pictures/ourika.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Full-Day Tour to Ourika Valley from marrakech</h3>
+                <p>Agadir, Morocco</p>
+            </div>
+    <div class="price">from  $30</div>
+    <a href="#" class="btn">book now</a>
+        </div>
+
+        <div class="box">
+            <img src="pictures/imlil.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Imlil Valley Day Trip From Agadir</h3>
+                <p>Agadir, Morocco</p>
+            </div>
+    <div class="price">from  $40</div>
+    <a href="#" class="btn">book now</a>
+        </div>
+
+
+        <div class="box">
+            <img src="pictures/croco.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>A Day in Agadir Crocoparc </h3>
+                <p>Agadir, Morocco</p>
+            </div>
+    <div class="price">from  $10</div>
+    <a href="#" class="btn">book now</a>
+        </div>
+
+       
+        <div class="box">
+            <img src="pictures/para.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Trip to Paradise Valley From Agadir </h3>
+                <p>Agadir, Morocco</p>
+            </div>
+    <div class="price">from  $10</div>
+    <a href="#" class="btn">book now</a>
+        </div>
+
+
+        <div class="box">
+            <img src="pictures/imswan.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>A Day in Imswan beach </h3>
+                <p>Agadir, Morocco</p>
+            </div>
+    <div class="price">from  $10</div>
+    <a href="#" class="btn">book now</a>
+        </div>
+
+        
+        <div class="box">
+            <img src="pictures/aa.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>1 Camping night to agadir Mountains  </h3>
+                <p>Agadir, Morocco</p>
+            </div>
+    <div class="price">from  $10</div>
+    <a href="#" class="btn">book now</a>
+        </div>
+
+
+        <div class="box">
+            <img src="pictures/mrw.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>1 Camping night to lac marwani from agadir  </h3>
+                <p>Agadir, Morocco</p>
+            </div>
+    <div class="price">from  $10</div>
+    <a href="#" class="btn">book now</a>
+        </div>
+
+        
+        <div class="box">
+            <img src="pictures/16.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>2 Days Atlas Mountain Trek To Berber Villages Via Lake Ifni</h3>
+                <p>marrakech, Morocco</p>
+            </div>
+    <div class="price">from  $10</div>
+    <a href="#" class="btn">book now</a>
+        </div>
+
+        <div class="box">
+            <img src="pictures/okay.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Day trip from Marrakech to Oukaimeden ski resort</h3>
+                <p>marrakech, Morocco</p>
+            </div>
+    <div class="price">from  $10</div>
+    <a href="#" class="btn">book now</a>
+        </div>
+
+        <div class="box">
+            <img src="pictures/culture.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Atlas mountain guided day trip</h3>
+                <p>benni mllal, Morocco</p>
+            </div>
+    <div class="price">from  $10</div>
+    <a href="#" class="btn">book now</a>
+        </div>
+
+
+
+</div>
+
+</section>
+
+<!-- packages section ends -->
+
+<!-- services section starts -->
+<section class="services" id="services">
+    <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>safty guide</h3>
+                <p>hdhjdldjizaljdazmkazmld,zmld,azml,dmlazdazml</p>
+            </div>
+
+            <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-hiking"></i>
+                    <h3>adventures</h3>
+                    <p>hdhjdldjizaljdazmkazmld,zmld,azml,dmlazdazml</p>
+                </div>
+
+                <div class="box-container">
+                    <div class="box">
+                        <i class="fas fa-hotel"></i>
+                        <h3>affordable hotels</h3>
+                        <p>hdhjdldjizaljdazmkazmld,zmld,azml,dmlazdazml</p>
+                    </div>
+        </div>
+</section>
+
+<!-- services section ends -->
+
+<!-- gallery section starts -->
+<section class="gallery" id="gallery">
+    <h1 class="heading">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="pictures/7.jpg" alt="">
+            <div class="content">
+            <h3>amazing places</h3>
+            <p>hhkkzefnuizfhuiezodd,mljfizehfzejk</p>
+            <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        
+
+        <div class="box">
+            <img src="pictures/2.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>hhkkzefnuizfhuiezodd,mljfizehfzejk</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+       </div>
+    
+       <div class="box">
+        <img src="pictures/3.jpg" alt="">
+        <div class="content">
+            <h3>amazing places</h3>
+            <p>hhkkzefnuizfhuiezodd,mljfizehfzejk</p>
+            <a href="#" class="btn">see more</a>
+        </div>
+   </div>
+
+   <div class="box">
+    <img src="pictures/4.jpg" alt="">
+    <div class="content">
+        <h3>amazing places</h3>
+        <p>hhkkzefnuizfhuiezodd,mljfizehfzejk</p>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+<div class="box">
+    <img src="pictures/5.jpg" alt="">
+    <div class="content">
+        <h3>amazing places</h3>
+        <p>hhkkzefnuizfhuiezodd,mljfizehfzejk</p>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+
+<div class="box">
+    <img src="pictures/6.jpg" alt="">
+    <div class="content">
+        <h3>amazing places</h3>
+        <p>hhkkzefnuizfhuiezodd,mljfizehfzejk</p>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+<div class="box">
+    <img src="pictures/1.jpg" alt="">
+    <div class="content">
+        <h3>amazing places</h3>
+        <p>hhkkzefnuizfhuiezodd,mljfizehfzejk</p>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+<div class="box">
+    <img src="pictures/8.jpg" alt="">
+    <div class="content">
+        <h3>amazing places</h3>
+        <p>hhkkzefnuizfhuiezodd,mljfizehfzejk</p>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+<div class="box">
+    <img src="pictures/9.jpg" alt="">
+    <div class="content">
+        <h3>amazing places</h3>
+        <p>hhkkzefnuizfhuiezodd,mljfizehfzejk</p>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+<div class="box">
+    <img src="pictures/10.jpg" alt="">
+    <div class="content">
+        <h3>amazing places</h3>
+        <p>hhkkzefnuizfhuiezodd,mljfizehfzejk</p>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+<div class="box">
+    <img src="pictures/11.jpg" alt="">
+    <div class="content">
+        <h3>amazing places</h3>
+        <p>hhkkzefnuizfhuiezodd,mljfizehfzejk</p>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+<div class="box">
+    <img src="pictures/12.jpg" alt="">
+    <div class="content">
+        <h3>amazing places</h3>
+        <p>hhkkzefnuizfhuiezodd,mljfizehfzejk</p>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+<div class="box">
+    <img src="pictures/13.jpg" alt="">
+    <div class="content">
+        <h3>amazing places</h3>
+        <p>hhkkzefnuizfhuiezodd,mljfizehfzejk</p>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+<div class="box">
+    <img src="pictures/14.jpg" alt="">
+    <div class="content">
+        <h3>amazing places</h3>
+        <p>hhkkzefnuizfhuiezodd,mljfizehfzejk</p>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+<div class="box">
+    <img src="pictures/15.jpg" alt="">
+    <div class="content">
+        <h3>amazing places</h3>
+        <p>hhkkzefnuizfhuiezodd,mljfizehfzejk</p>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+<div class="box">
+    <img src="pictures/17.jpg" alt="">
+    <div class="content">
+        <h3>amazing places</h3>
+        <p>hhkkzefnuizfhuiezodd,mljfizehfzejk</p>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+     </div>
+
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- contact section starts -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+</h1>
+<div class="row">
+    <div class="image">
+        <img src="pictures/cnt.jpg" alt="">
+    </div>
+
+<form action="">
+    <div class="inputBox">
+        <input type="text" placeholder="name">
+        <input type="email" placeholder="email">
+    </div>
+
+    <div class="inputBox">
+        <input type="number" placeholder="number">
+        <input type="text" placeholder="subject">
+    </div>
+
+<textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+<input type="submit" class="btn" value="send message">
+</form>
+
+
+</div>
+
+</section>
+
+<!-- contact section ends -->
+<!-- footer section -->
+
+<section class="footer">
+
+    <div class="box-container">
+        <div class="box">
+            <h3>about us</h3>
+        <p>for more informations go check as_world</p>
+</div>
+        
+    <div class="box">
+        <h3>branch location</h3>
+        <a href="#">Morocco</a>
+    </div>
+    <div class="box">
+        <h3>quick links</h3>
+        <a href="#">home</a>
+        <a href="#">book</a>
+        <a href="#">packages</a>
+        <a href="#">services</a>
+        <a href="#">gallery</a>
+        <a href="#">contact</a>
+    </div>
+
+    <div class="box">
+        <h3>follow us</h3>
+        <a href="#">facebook</a>
+        <a href="#">instagram</a>
+    </div>
+</div>
+
+    <h1 class="credit"> created by <span> as_world </span> all right reserved! </h1>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- review section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--custom js file link-->
+<script src="script.js"></script>
+
+
+
+
+    
+</body>
+</html>
